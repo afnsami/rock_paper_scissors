@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Death Match!</title>
 </head>
 
 <body>
+
+    <main>
+        <!--TEXT SECTION-->
+        <div class="text-section">
+            <h1>Rock Paper Scissors Death Match!</h1>
+
+            <div id="result-container">
+                <div id="scoreboard">
+                    <h3>You: <span id="playerPoints">0</span></h3>
+                    <h2>---</h2>
+                    <h3><span id="cpuPoints">0</span> :CPU</h3>
+                </div>
+
+                <h3 id="status">Select your choice by click buttons.</h3>
+                <h3 id="winner"> </h3>
+                <h3 id="previousResult"> </h3>
+            </div>
+        </div>
+
+        <!--CHOICE CARDS-->
+        <div class="choices">
+            <div id="rock">
+                <img src="images/rock.png">
+                <button id="rock">Rock</button>
+            </div>
+
+            <div id="paper">
+                <img src="images/paper.png">
+                <button id="paper">Paper</button>
+            </div>
+
+            <div id="scissors">
+                <img src="images/scissors.png">
+                <button id="scissors">Scissors</button>
+            </div>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <h3>view <a href="https://github.com/anaseig/rock_paper_scissors" target="_blank">source code</a></h3>
+        <h2>-</h2>
+        <p>icons by <a href="https://flaticon.com" target="_blank">flaticon</a></p>
+    </footer>
 
 </body>
 
